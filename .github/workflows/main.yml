@@ -3,6 +3,8 @@ name: "Deploy Infrastructure"
 on:
   workflow_dispatch:
   push:
+  pull_request:
+
 
 jobs:
   terraform:
