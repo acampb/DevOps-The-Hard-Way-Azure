@@ -7,7 +7,7 @@
 		"dockerfile": "Dockerfile",
 		// Update 'VARIANT' to pick an Ubuntu version: hirsute, focal, bionic
 		// Use hirsute or bionic on local arm64/Apple Silicon.
-		"args": { "VARIANT": "focal" }
+		"args": { "VARIANT": "bionic" }
 	},
 
 	// Set *default* container specific settings.json values on container create.
@@ -32,7 +32,7 @@
 		"azure-cli": "latest",
 		"docker-from-docker": {
 			"version": "latest",
-			"moby": true
+			"moby": false
 		}
 	}
 }
