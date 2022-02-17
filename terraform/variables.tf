@@ -1,6 +1,11 @@
-variable "name" {
+variable "app" {
   type        = string
-  description = "Name for resources"
+  description = "example application name"
+}
+
+variable "env" {
+  type = string
+  description = "Name of the environment"
 }
 
 variable "location" {

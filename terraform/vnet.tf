@@ -1,5 +1,5 @@
 resource "azurerm_virtual_network" "virtual_network" {
-  name                = "vnet-${var.name}"
+  name                = "vnet-${var.app}-${var.env}"
   location            = var.location
   resource_group_name = azurerm_resource_group.rg.name
   address_space       = [var.network_address_space]

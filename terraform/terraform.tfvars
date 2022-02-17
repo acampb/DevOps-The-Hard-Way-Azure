@@ -1,4 +1,5 @@
-name                       = "cljdevopshard"
+app                       = "clj"
+env = "poc"
 location                   = "eastus"
 network_address_space      = "10.10.0.0/16"
 aks_subnet_address_name    = "snet-aks"

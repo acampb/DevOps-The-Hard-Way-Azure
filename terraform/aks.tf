@@ -5,7 +5,7 @@ module "aks" {
   #client_secret                    = "your-service-principal-client-password"
   kubernetes_version               = var.kubernetes_version
   orchestrator_version             = var.kubernetes_version
-  prefix                           = var.name
+  prefix                           = var.app
   cluster_name                     = "aks-cluster"
   network_plugin                   = "azure"
   vnet_subnet_id                   = azurerm_subnet.aks_subnet.id
