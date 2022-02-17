@@ -4,9 +4,6 @@
 ARG VARIANT="buster"
 FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
 
-# Install oh-my-zsh
-#RUN sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-
 # zsh stuff
 # syntax highlighting
 RUN git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-/home/vscode/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting

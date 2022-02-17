@@ -103,5 +103,5 @@ DISABLE_AUTO_UPDATE=true
 DISABLE_UPDATE_PROMPT=true
 
 alias l="exa --icons --all --group-directories-first"
-alias ll="l --long --group"
+alias ll="l --long --group --header --git"
 alias tree="ll --tree --level=3 -I=.git --git-ignore"
